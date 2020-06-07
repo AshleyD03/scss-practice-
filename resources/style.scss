@@ -1,0 +1,115 @@
+@mixin flex($x) {
+    display: flex;
+    justify-content: $x;
+    align-items: $x;
+    }
+
+@mixin hover-grow($time, $deg, $scale) {
+    transition: transform $time;
+    &:hover{
+        -webkit-transform: rotate($deg) scale($scale);
+        -ms-transform: rotate($deg) scale($scale);
+        transform: rotate($deg) scale($scale);
+    }
+}
+
+body{
+    font-family: 'Aleo';
+    background-color: #e3e3e3;
+}
+
+#container{
+    padding-left: 10vw;
+    width: 80vw;
+}
+
+#link-bar {
+    @include flex(left);
+    font-size: 0.5rem;
+    color: black;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover{
+        @include hover-grow(.2s, 0deg, 1.05)
+    }
+    
+    div {
+        margin: 0rem .6rem 0rem 0.6rem;
+    }
+}
+
+#logo {
+    @include flex(center);
+    padding: 2rem 0rem 1rem 0rem;
+
+    img {
+        width: 25vw;
+    }
+
+    #container-whats1 {
+        @include flex(center)
+    }
+}
+
+
+
+#content-bar{
+    @include flex(center);
+    padding-bottom: 0.8rem;
+
+    button { 
+        font-size: 0.7rem;
+        font-weight: 500;
+
+        border: none;
+        outline: none;
+        background: inherit;
+        padding: 0rem 0.9rem 0rem 0.9rem;
+    }
+
+    button:hover {
+        @include hover-grow(.2s, 0deg, 1.2)
+    }
+
+    #but-whats {
+        color: rgb(25, 25, 133);
+        font-weight: 600;
+    }
+}
+
+.section{
+    visibility: hidden;
+    position: absolute;
+    padding-left: 10vw;
+    width: 80vw;
+}
+
+#body-whats {
+    z-index: 3;
+    visibility: visible;
+
+    #container-whats1 {
+        display: grid;
+        grid-template-columns: 1 1;
+        grid-row-gap: 10px;
+    }
+}
+
+.head1 {
+    font-size: 1.5rem;
+}
+
+.head2 {
+    font-size: 0.7rem;
+}
+
+.p1 {
+    padding-top: 1rem;
+    font-size: 0.6rem;
+}
+
+

@@ -1,0 +1,146 @@
+body {
+  font-family: 'Aleo';
+  background-color: #e3e3e3;
+}
+
+#container {
+  padding-left: 10vw;
+  width: 80vw;
+}
+
+#link-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-size: 0.5rem;
+  color: black;
+}
+
+#link-bar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#link-bar a:hover {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+#link-bar a:hover:hover {
+  -webkit-transform: rotate(0deg) scale(1.05);
+  transform: rotate(0deg) scale(1.05);
+}
+
+#link-bar div {
+  margin: 0rem .6rem 0rem 0.6rem;
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+#logo img {
+  width: 25vw;
+}
+
+#logo #container-whats1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+#content-bar button {
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: inherit;
+  padding: 0rem 0.9rem 0rem 0.9rem;
+}
+
+#content-bar button:hover {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+#content-bar button:hover:hover {
+  -webkit-transform: rotate(0deg) scale(1.2);
+  transform: rotate(0deg) scale(1.2);
+}
+
+#content-bar #but-whats {
+  color: #191985;
+  font-weight: 600;
+}
+
+.section {
+  visibility: hidden;
+  position: absolute;
+  padding-left: 10vw;
+  width: 80vw;
+}
+
+#body-whats {
+  z-index: 3;
+  visibility: visible;
+}
+
+#body-whats #container-whats1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1 1;
+      grid-template-columns: 1 1;
+  grid-row-gap: 10px;
+}
+
+.head1 {
+  font-size: 1.5rem;
+}
+
+.head2 {
+  font-size: 0.7rem;
+}
+
+.p1 {
+  padding-top: 1rem;
+  font-size: 0.6rem;
+}
+/*# sourceMappingURL=style.css.map */
